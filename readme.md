@@ -3,8 +3,6 @@
 ```markdown
 # Overview of Programming Paradigms
 
-This repository provides examples for different programming paradigms. Each paradigm offers a unique approach to structuring code and solving problems.
-
 ## Procedural Programming Paradigm
 
 Procedural programming is an approach that organizes code into structured procedures or functions. These procedures consist of a series of well-defined steps or instructions executed sequentially. However, this paradigm may lack the reusability and functionality of more advanced programming paradigms.
@@ -82,9 +80,66 @@ Event-Driven Programming is a paradigm that listens to user instructions and res
 document.getElementById('myButton')?.addEventListener('click', () => {
     alert("Button clicked");
 });
+
 ```
 
-Explore these examples to gain insights into how each paradigm approaches problem-solving and code organization.
+# Module-2: Class and Object 
+
+## Contents:
+
+1. Write a class.
+2. Make properties.
+3. Initialize properties.
+4. Use public parameter property to simplify your code.
+5. Instance.
+
+## Code Example:
+
+```typescript
+// Write class:
+class Cricketer {
+    name: string; 
+    age: number;
+    bestPerformance: string;
+    debut: number;
+
+    constructor(name: string, age: number, bestPerformance: string, debut: number){
+        this.name = name;
+        this.age = age;
+        this.bestPerformance = bestPerformance;
+        this.debut = debut;
+    }
+
+    interviewTalks(){
+         console.log(`${this.name} talks about his ${this.bestPerformance}`);
+    }
+}
+
+const tamimIqbal = new Cricketer("Tamim", 36, "Lords Hundred", 2006);
+
+const tamimAge = tamimIqbal.age;
+const tamimPerformance = tamimIqbal.bestPerformance;
+```
+Explanation for Code Review:
+
+In the above example, we're encountering code repetition. Properties are being declared, written as parameters, and repeated in the constructor. To mitigate this redundancy, we should use the 'public' parameter property.
+
+All the properties of this Cricketer class are publicly accessible. Attempting to access them prompts suggestions. Here's a modified code example that eliminates repetition.
+
+```typescript
+class GreatCricketer {
+    // public name: string; // If we don't write the public keyword, it's still public. 
+
+    // We also don't need to write properties' names. We're just writing the public keyword before the parameter, and it's all done.
+     
+    constructor(public name: string, public age: number, public bestPerformance: string, public debut: number){
+        // Now, we don't have to initialize.
+    }
+     
+    // A Method (Function).
+    interviewTalks(){
+         console.log(`${this.name} talks about his ${this.bestPerformance}`);
+    }
+}
 ```
 
-Feel free to use or modify this `README.md` file for your repository!

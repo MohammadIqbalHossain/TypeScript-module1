@@ -5,10 +5,10 @@
 
 // Python example:
 
-def greet(name)
-    print("Hello" + name);
+// def greet(name)
+//     print("Hello" + name);
 
-greet("developer")
+// greet("developer")
 
 
 // Functional programming paradigm:
@@ -16,7 +16,7 @@ greet("developer")
 // Functional programming is lieke set of building block that are like mathmatical function. that helps you make your code easier to understamd and less bug fiendly. In functional programming paradigm function are treats like a king.
 
 // Functional programming.
-function greet(myName){
+function greet(myName : string){
     console.log(myName)
 }
 
@@ -25,10 +25,10 @@ greet('Developer');
 // Declarative programming: Declarative programming focused on what you want to achive rather that writing step-by-step code to achive that outcome. Programmer should properly descripe what he wants to accomplish. and underlying frameworks or programming will find out how to achive the outcome.
 
 
-Declarative programming.
-SELECT first_name, last_name;
-FROM empolyees
-WHERE depertment = 'sales'
+// Declarative programming.
+// SELECT first_name, last_name;
+// FROM empolyees
+// WHERE depertment = 'sales'
 
 
 // Object-Oriendted-Programming: Object oriented programmming (OOP) is programming paradigm that organizes programming around the objects. which are instance of classes defining data and behevior. In OOP, software are designed by modeling real world objects, each having arrtibutes (data) and methods (Fucntion) that operates on the data.
