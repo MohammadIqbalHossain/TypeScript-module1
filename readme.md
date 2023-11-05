@@ -238,14 +238,16 @@ Karim.takeClass(4);
 In this way, the 'Person' class encapsulates common properties and methods, promoting cleaner and more maintainable code.
 ```
 
-### Type Guard.
+
 
  ```
-# In TypeScript, a type guard is a mechanism that allows you to narrow down the type of a variable within a specific code block. It's a conditional statement or function that checks the type of a value and provides a more specific type for TypeScript to infer within that scope.
+ # Type Guard.
 
-# Type guards are particularly useful when working with union types or types that can be more than one specific shape. They enable you to perform type-specific operations or access properties confidently without the risk of runtime errors.
+In TypeScript, a type guard is a mechanism that allows you to narrow down the type of a variable within a specific code block. It's a conditional statement or function that checks the type of a value and provides a more specific type for TypeScript to infer within that scope.
 
-# In this example, Param1 and param2 could be string or a number. If two paremters are number the function will do additon. if not it'll concate both parameter. It's using typeof to check both of them are number.
+Type guards are particularly useful when working with union types or types that can be more than one specific shape. They enable you to perform type-specific operations or access properties confidently without the risk of runtime errors.
+
+In this example, Param1 and param2 could be string or a number. If two paremters are number the function will do additon. if not it'll concate both parameter. It's using typeof to check both of them are number.
 
 ```typescript
 type Alphanewmeric = string | number;
@@ -261,7 +263,8 @@ const add = (param1: Alphanewmeric, param2: Alphanewmeric): Alphanewmeric => {
 
 const additon : Alphanewmeric = add(3, 4); 
 ```
-// Another example: using "in" operator to check type.
+Another example: using "in" operator to check type.
+
 ```typescript
 
 type NormalUser = {
