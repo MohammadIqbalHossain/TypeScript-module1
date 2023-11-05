@@ -143,3 +143,96 @@ class GreatCricketer {
 }
 ```
 
+
+```markdown
+# Inheritance in TypeScript
+
+Inheritance is a powerful concept in object-oriented programming that allows a class to inherit properties and methods from another class. This reduces code repetition and promotes code reuse.
+
+## Scenario:
+
+Consider two classes, 'Student' and 'Teacher.' Both share common properties like name, age, and address, as well as a common method, 'sleep.' Initially, these properties and methods are individually written for each class, resulting in code repetition.
+
+## Code Example:
+
+```typescript
+class Student {
+    constructor(public name: string, public age: number, public address: string){
+        
+    }
+
+    sleep(sleepHours: number){
+        console.log(`${this.name} sleeps ${sleepHours} a day.`);
+    }
+}
+
+class Teacher {
+    constructor(public name: string,
+        public age: number,
+        public address: string,
+        public designation: string
+        ){
+
+    }
+
+    sleep(sleepHours: number){
+        console.log(`${this.name} sleeps ${sleepHours} a day.`);
+    }
+
+    takeClass(classHours : number){
+        console.log(`${this.name} takes class ${classHours} a day.`);
+    }
+}
+```
+
+### Code Improvement:
+
+Both 'Student' and 'Teacher' classes have common properties and methods. To eliminate this repetition, we can create a parent class, 'Person,' and have both 'Student' and 'Teacher' inherit from it.
+
+```typescript
+// Parent class
+class Person {
+    constructor(public name: string, public age: number, public address: string){
+        
+    }
+
+    sleep(sleepHours: number){
+        console.log(`${this.name} sleeps ${sleepHours} a day.`);
+    }
+}
+
+// Inheriting from the parent class
+class Student2 extends Person {
+    constructor(public name: string, public age: number, public address: string){
+        super(name, age, address);
+    }
+}
+```
+ Here we're calling a super() fucntion in constructor. as we know we're inheriting data from parent. our constructur wouldn't make the student, they are person's property. So, we've to send them to the 'Person' class to make the student. super() is a method to send our data to it's parent.
+
+```typescript
+const shoriful = new Student2('Shoriful', 23, "Gahana");
+shoriful.sleep(5);
+
+// Inheriting from the parent class
+class Teacher2 extends Person {
+    constructor(public name: string,
+        public age: number,
+        public address: string,
+        public designation: string
+        ){
+            super(name, age, address);
+        }
+
+    takeClass(classHours : number){
+        console.log(`${this.name} takes class ${classHours} a day.`);
+    }
+}
+
+const Karim = new Teacher2('Karim', 34, "Ghana", "Math teacher");
+Karim.takeClass(4);
+```
+
+In this way, the 'Person' class encapsulates common properties and methods, promoting cleaner and more maintainable code.
+```
+

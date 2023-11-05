@@ -46,7 +46,7 @@ class GreatCricketer {
      
     // A Merhod (Fucntion).
     interviewTalks(){
-         console.log(`${this.name} talks about his ${this.bestPerformence}`);
+         console.log(`${this.name} talks about his ${this.bestPerformance}`);
     }
 }
 
