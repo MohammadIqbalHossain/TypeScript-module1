@@ -187,7 +187,7 @@ class Teacher {
 
 ### Code Improvement:
 
-Both 'Student' and 'Teacher' classes have common properties and methods. To eliminate this repetition, we can create a parent class, 'Person,' and have both 'Student' and 'Teacher' inherit from it.
+Both `'Student'` and `'Teacher'` classes have common properties and methods. To eliminate this repetition, we can create a parent class, `'Person,'` and have both `'Student'` and `'Teacher'` inherit from it.
 
 ```typescript
 // Parent class
@@ -207,12 +207,13 @@ class Student2 extends Person {
         super(name, age, address);
     }
 }
-```
- Here we're calling a super() fucntion in constructor. as we know we're inheriting data from parent. our constructur wouldn't make the student, they are person's property. So, we've to send them to the 'Person' class to make the student. super() is a method to send our data to it's parent.
 
-```typescript
 const shoriful = new Student2('Shoriful', 23, "Gahana");
 shoriful.sleep(5);
+```
+ Here we're calling a ```super()``` fucntion in constructor. as we know we're inheriting data from parent. our constructur wouldn't make the student, they are person's property. So, we've to send them to the 'Person' class to make the student. `super()` is a method to send our data to it's parent.
+
+```typescript
 
 // Inheriting from the parent class
 class Teacher2 extends Person {
