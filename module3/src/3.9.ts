@@ -4,7 +4,6 @@
 
     // here, we're written a class 'Shape' that has just a method which return 0. But In class 'Circle' which is a child of 'Shape' that uses same method 'getArea' but return circle area with the help of 'Radius' whic we're getting by a constructor. and third class 'Rectengular' also does same. 
 
-    // Defination:
 
     class Sleep {
         getSleep(): void{
