@@ -492,7 +492,8 @@ When we write a normal class we can get it's properties using instance. when we 
 
 ```
 
- #Polymorphism: 
+ # Polymorphism
+
  When a method of a class changes it's output based on diffrent situation then can call it polymorphism.
 
  here, we're written a class 'Shape' that has just a method which return 0. But In class 'Circle' which is a child of 'Shape' that uses same method 'getArea' but return circle area with the help of 'Radius' whic we're getting by a constructor. and third class 'Rectengular' also does same. 
@@ -635,6 +636,72 @@ class Bike extends BikeStructure {
     const heroHonda = new Bike();
     heroHonda.engineStops(); //log: Bike is stopped.
 ```
+
+# Encapsulation.
+   Encapsulation means restriction of public access. In a class, we can hide or restrict publicly accesible data. By implementing encapsulationm, the private data will be forviden to override or reassign.
+
+    It's uses some common modifiers to implement.
+    1. Public : Using public modifiers in a data or variable will accessible to all.
+    2. Private: Private variable can be accessible inside the class.
+    3. Protected: Protected data can be inherited to in's child but can't accessible to outside parent and childs.
+
+
+   Example Public modifiers:
+
+    ```typescript
+    class MyName {
+        public name: string
+
+        constructor(name: string){
+            this.name = name
+        }
+    }
+
+    //Write an instance to see that it's accessible.
+    const myName = new MyName("Iqbal");
+    console.log(myName.name);
+    ```
+    Private modifiers:
+
+    ```typescript
+    //Private modifiers:
+     class Account {
+        private _balance: number
+
+        constructor(_balance: number){
+            this._balance = _balance;
+        }
+    }
+
+    //Write an instance to see that it's accessible.
+    const myBalance = new Account(23);
+    // console.log(myBalance._balance) //Accessing `_balance` will give us an error.
+    ```
+     Protected modifiers:
+
+    ```typescript
+      //
+         class MyBalance {
+            protected _balance: number
+    
+            constructor(_balance: number){
+                this._balance = _balance;
+            }
+        }
+
+        class StudentBalance extends MyBalance {
+            _studentbalance : number;
+
+            constructor(_studentbalance: number){
+                super(_studentbalance);
+                this._studentbalance = _studentbalance;
+                console.log(this._balance); //here, _balance is accssible, as it's a child of 'MyBalance'.
+            }
+        }
+    
+        //Write an instance to see that it's accessible.
+        const studentBalance = new StudentBalance(23);
+    ```
 
 
 
