@@ -22,7 +22,7 @@
     console.log(myName.name);
 
 
-     //Private Public modifiers:
+     //Private modifiers:
      class Account {
         private _balance: number
 
@@ -36,7 +36,7 @@
     // console.log(myBalance._balance) //Accessing _balance will give us an error.
 
 
-         //Private Public modifiers:
+         //Protected modifiers:
          class MyBalance {
             protected _balance: number
     

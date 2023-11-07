@@ -21,7 +21,7 @@
 
         // using getter to get balance.
         
-        public balance() : number {
+        public get balance() : number {
             return this._balance
         }
         
