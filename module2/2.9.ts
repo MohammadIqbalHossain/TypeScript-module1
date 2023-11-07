@@ -1,5 +1,5 @@
 {
-    // Consitional type: If a type is dependend to another type for creating another type then it called conditional type.
+    // Conditional type: If a type is dependend to another type for creating another type then it called conditional type.
 
     // Conditional types in TypeScript allow you to create types that depend on a condition.They use the extends keyword to check a condition and provide different types based on whether the condition is true or false.
 

@@ -1,7 +1,7 @@
 {
     // 
 
-    // Constrains: Think about a situtation where we're setting user type in function calling means we've using generic type for this. 
+    // Constrains: Think about a situtation where we're setting user type in function calling means we're using generic type for this. 
 
     // Oaky, let's write the fucntion.
 

@@ -25,7 +25,7 @@
         }
     }
 
-    // In argument we,ve given number. So, I knnow what it'll retuen a number off course. That why we're explicitly using type assertion.
+    // In argument we,ve given number. So, I knnow what it'll retuen a number offcourse. That why we're explicitly using type assertion.
     const result1 = kgToGm(1000) as number
     const result2 = kgToGm("1000") as string
 

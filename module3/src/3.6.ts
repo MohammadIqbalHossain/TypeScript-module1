@@ -1,7 +1,7 @@
 {
 // 
 // Access modifies. 
-// scenario: consider we've a private property. we don't want to it to be accesible outside the class. it's can't be modified out it's class. To do so, we can use 'private' operator. But, their is a problem, if we use private the property won't be accessible it's child class. If we want it to inherite it's child class we can can 'protected' operator instead of private. 
+// scenario: consider we've a private property. we don't want to it to be accesible outside the class. it's can't be modified out it's class. To do so, we can use 'private' operator. But, their is a problem, if we use private modifier the property won't be accessible to it's child class. If we want it to inherite it's child class we can use'protected' modifier instead of private. 
 
 // note: If a property is protected of privat it's convention to use a undescore (_) before it.
 

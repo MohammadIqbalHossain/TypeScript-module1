@@ -1,6 +1,6 @@
 {
     // 
-    // Mapped types: we'll convert a type another typei using mapped types.
+    // Mapped types: we'll convert a type another type using mapped types.
 
     // How we do it in JavaScript?
     const arrayOfNumber: number[] = [1, 3, 56];

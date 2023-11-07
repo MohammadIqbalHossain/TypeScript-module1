@@ -677,7 +677,7 @@ class Bike extends BikeStructure {
     const myBalance = new Account(23);
     // console.log(myBalance._balance) //Accessing `_balance` will give us an error.
     ```
-     Protected modifiers:
+    Protected modifiers:
 
     ```typescript
       //
